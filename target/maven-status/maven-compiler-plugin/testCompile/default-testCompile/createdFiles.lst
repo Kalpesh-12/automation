@@ -1,0 +1,10 @@
+Page\Loginpage2.class
+stepDefinition\adduserstpe.class
+stepDefinition\LoginSteps.class
+stepDefinition\Baseclass.class
+runner\run.class
+Page\Adduserpagex.class
+Automation2_g\Automation2\AppTest.class
+Page\Loginpage.class
+stepDefinition\takeScraenshotOnFailure.class
+stepDefinition\TestContext.class
