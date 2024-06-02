@@ -89,23 +89,23 @@ public class TestContext {
 	@After(order = 1)
 	public void takeScraenshotOnFailure(Scenario scenario) throws IOException {
 	//	C:\Users\HP\eclipse-workspace\Acucu\src\main\java\extent.properties
-//		FileReader reader=new FileReader("C:\\Users\\HP\\eclipse-workspace\\Acucu\\src\\main\\java\\extent.properties"); 
-//        Properties props=new Properties(); 
-//        props.load(reader); 
-//    	String dir = props.getProperty("screenshot.dir");
-//	    System.out.println( "dir!"+dir );
+		FileReader reader=new FileReader("C:\\Users\\HP\\eclipse-workspace\\Acucu\\src\\main\\java\\extent.properties"); 
+        Properties props=new Properties(); 
+        props.load(reader); 
+    	String dir = props.getProperty("screenshot.dir");
+	    System.out.println( "dir!"+dir );
 //		String path = props.getProperty("rel.path");
 //	    System.out.println( "path!"+path );
 //	    System.out.println( "after!" );
 
 
-//		if (scenario.isFailed()) {
-//
-//		TakesScreenshot ts = (TakesScreenshot)driver;
-//
-//		byte[] src = ts.getScreenshotAs(OutputType.BYTES);
-//		scenario.attach(src, "image/png", "test1");
-	//	}
+		if (scenario.isFailed()) {
+
+		TakesScreenshot ts = (TakesScreenshot)driver;
+
+		byte[] src = ts.getScreenshotAs(OutputType.BYTES);
+		scenario.attach(src, "image/png", "test1");
+		}
 
 		}
 	

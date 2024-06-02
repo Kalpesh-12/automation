@@ -61,7 +61,7 @@ public void admin_launch_broweser() throws Exception {
   
   
   
-  WebDriverManager.chromedriver().setup();
+  WebDriverManager.chromedriver().setup();//wcs
    ChromeOptions option = new ChromeOptions();
     driver = new ChromeDriver(option);
     driver.manage().window().maximize();
@@ -98,7 +98,6 @@ public void admin_hit_url(String urlF) throws Exception {
 @When("admin enter {string} and {string}")
 public void admin_enter_and(String user, String pass) throws InterruptedException {
 	context.InitializePageObject(driver);
-  
 	context.loginObj.userlogin(user, pass);//comtfrom step, login ob from logoin page
 
 
