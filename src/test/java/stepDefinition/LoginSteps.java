@@ -99,7 +99,7 @@ public void admin_hit_url(String urlF) throws Exception {
 public void admin_enter_and(String user, String pass) throws InterruptedException {
 	context.InitializePageObject(driver);
   
-	context.loginObj.userlogin(user, pass);
+	context.loginObj.userlogin(user, pass);//comtfrom step, login ob from logoin page
 
 
     

@@ -49,15 +49,21 @@ public class Loginpage {
 	
 	public void userlogin(String pageuser,String pagepassword) throws InterruptedException
 	{
-		
-		driver.findElement(By.xpath("//*[@id='modlgn-username']")).sendKeys(pageuser);
-		driver.findElement(By.xpath("//*[@id='modlgn-passwd']")).sendKeys(pagepassword);
-		Thread.sleep(3000);
-		
-		driver.findElement(By.xpath("//*[@name='Submit']")).click();
-		Thread.sleep(2000);
-     	driver.findElement(By.xpath("//*[@id=\"adminForm\"]/input[8]")).click();
+//		
+//		driver.findElement(By.xpath("//*[@id='modlgn-username']")).sendKeys(pageuser);
+//		driver.findElement(By.xpath("//*[@id='modlgn-passwd']")).sendKeys(pagepassword);
+//		Thread.sleep(3000);
+//		
+//		driver.findElement(By.xpath("//*[@name='Submit']")).click();
+//		Thread.sleep(2000);
+//     	driver.findElement(By.xpath("//*[@id=\"adminForm\"]/input[8]")).click();
 
+     	
+     	//------guru
+		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[5]/td[2]/input1")).sendKeys(pageuser);
+
+     	
+     	
 		
 //		for (int n=0;n<43;n++)
 //		{
